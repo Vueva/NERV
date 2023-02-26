@@ -20,6 +20,8 @@ pnpm-lock.yaml
 *.tgz
 
 # Editor directories and files
+auto-imports.d.ts
+components.d.ts
 .vscode/*
 !.vscode/extensions.json
 .cache

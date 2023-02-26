@@ -3,7 +3,7 @@
  * @Author: maggot-code
  * @Date: 2023-02-26 01:36:33
  * @LastEditors: maggot-code
- * @LastEditTime: 2023-02-26 19:19:15
+ * @LastEditTime: 2023-02-26 21:26:17
  * @Description: 
  */
 import { defineConfig } from 'vite';
@@ -27,6 +27,13 @@ export default defineConfig({
         extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx", ".json"],
         dedupe: ["vue"],
         preserveSymlinks: false,
+    },
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: '@import "@/var.scss";'
+            }
+        }
     },
     json: {
         namedExports: true,
